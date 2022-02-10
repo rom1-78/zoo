@@ -25,6 +25,7 @@ echo"<p>Espece ajoutée</p>";
 
 mysql_close();
 ?>
-
+<a href="ajout_animal.html">ajout d'un animal</a>
+<a href="index.html">retour au menu principal</a>
 </body>
 </html>
