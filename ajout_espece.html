@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Ajouter une espece</h1>
+<form method="post" action="ajout_espece.php">
+<table>
+	<tr>
+		<td>Identifiant de l'espece :</td> <td><input type="text" name="id" value=""></td>
+	</tr>
+	<tr>
+		<td>Race :</td> <td><input type="text" name="nom_race" value=""></td>
+	</tr>
+	<tr>
+		<td>Type de nourriture :</td> <td><select name="nourriture" id="nourriture">
+		<option value="nourriture" selected> </option>
+		<option value="carnivore">carnivore</option>
+		<option value="herbivore">herbivore</option>
+		<option value="omnivore">omnivore</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Durée de vie moyenne(en année) :</td> <td><input type="text" name="duree_vie" value=""></td>
+	</tr>
+	<tr>
+		<td rawspan="2">animal aquatique : </td> 
+		<td><input type="radio" name="animal_aquatique" value="oui">oui<br>
+		<input type="radio" name="animal_aquatique" value="non">non<br></td>
+	</tr>
+</table>
+
+ <input  type="submit" value="valider">
+<a href="index.html">retour au menu principal</a>
+</form>
+</body>
+</html>
