@@ -1,0 +1,66 @@
+Requete 1
+UPDATE `voitures`
+SET `kilometrage`="10000";
+
+Requete 2
+UPDATE `voitures` 
+SET `prix_achat` =48500 
+WHERE `marque` = "Tesla"
+
+requete 3
+UPDATE `clients` 
+SET `adresse` = "21 avenue de strasbourg" 
+WHERE `nom_prenom` = "Yasmine"
+
+
+LES JOINTURES
+requete 4
+SELECT V.marque, L.client
+FROM voitures V
+JOIN locations L ON (V.immatriculation=L.immatriculation)
+WHERE L.code_client='t200'
+
+requete 5
+SELECT C.nom,C.adresse,L.immatriculation
+FROM clients C
+JOIN location L ON(C.code_client=L.code_client)
+WHERE L.immatriculation="22 TU 2222"
+
+requete 6
+SELECT v.immatriculation,v.kilometrage,v.marque
+FROM voitures v
+JOIN locations L ON(v.immatriculation=L.immatriculation)
+WHERE L.prix_location<60
+
+requete 7
+SELECT v.kilometrage,v.modele,v.marque
+FROM voitures V
+JOIN locations L ON (V.immatriculation=L.immatriculation)
+WHERE L.date_location between "2021-11-01" and "2021-11-30"
+
+requete 8
+SELECT C.nom_prenom,C.adresse
+FROM client C
+JOIN location L ON(C.code_client=L.code_client)
+JOIN voitures V ON(L.immatriculation=V.immatriculation)
+WHERE V.marque="Tesla"
+
+requete 9
+DELETE
+FROM voitures
+WHERE marque="audi"
+
+requete 10
+ALTER TABLE clients
+DROP code_postal
+
+
+UNION
+requete 11
+SELECT voitures
+FROM voitures
+WHERE upper(marque) like"T%"
+UNION
+SELECT nom_prenom
+FROM clients
+WHERE upper(nom_prenom) like"R%"

@@ -1,0 +1,42 @@
+Requêtes:
+Requêtes sans jointure 
+1)  Combien d’habitants dans les toutes les communes (en supposant que chacun n’a été compté qu’une fois dans les  différentes communes. . . ) ? 
+SELECT  SUM( population_2010)
+FROM COMMUNES
+
+2)  Combien de communes Dans le département 91? 
+SELECT Count (*)
+FROM COMMUNES
+WHERE NUM_DEPARTEMENT =’ 91’
+
+3)  Quelles sont les deux plus petites communes, en superficie ? 
+SELECT nom_commune, population_2010
+Order By Surface LIMIT 2;
+
+4)  Quelles sont les deux communes les plus peuplées ? 
+SELECT nom, population_2010 
+ from Communes Order by  population 2010 DESC LIMIT 2 ;
+
+5)  Quelles sont les deux communes en ile de france les plus densément peuplées ? 
+SELECT nom, population_2010/surface As densite
+from communes Order By densite DESC limit 2
+
+6)  Donner la liste des numéros de département, avec pour chaque numéro le nombre de communes du département. Afficher un titre explicite pour la colonne des nombres de communes. 
+SELECT num_departement, count(*) as nb_communes
+from communes Group by num_departement
+
+7)  Donner la liste des numéros de département, avec pour chaque numéro la population totale du département. Trier par population totale décroissante et limiter la liste aux départements ayant plus d’un million d’habitants. 
+SELECT num_departement, SUM(population_2010) AS population 
+from communes Group by num_departement 
+Having population > 100000 Order by population DESC;
+
+
+Requête avec jointure
+8)  Donner la liste des noms des départements de la région Ile de France et Pays de la Loire. 
+SELECT departement.nom, region.nom
+from departement 
+JOIN ON REGION (departement.num_region = region.num_region)
+WHERE
+Region.nom = ‘Ile de France’ OR  Region.nom = ‘Pays de la loire’
+
+
