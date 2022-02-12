@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<body>
+<h1>Ajouter un animal</h1>
+<form method="post" action="ajout_animal.php">
+<table>
+	<tr>
+		<td>Ref de la race de l'animal:</td> <td><input type="text" name="ref_race" value=""></td>
+	</tr>
+	<tr>
+		<td>Date de naissance :</td> <td><input type="text" name="date_naissance" value=""></td>
+	</tr>
+	<tr>
+		<td>Sexe :</td> <td><select name="sexe" id="sexe">
+		<option value="sexe" selected> </option>
+		<option value="M">Male</option>
+		<option value="F">Femelle</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Pseudo du bestio :</td> <td><input type="text" name="pseudo" value=""></td>
+	</tr>
+	<tr>
+		<td>Commentaire :</td> <td><input type="text" name="commentaire" value=""></td>
+	</tr>
+</table>
+
+ <input  type="submit" value="valider" id="req1">
+ <a href="index.html">retour au menu principal</a>
+
+</form>
+</body>
+</html>
