@@ -16,7 +16,7 @@ $requete=("DELETE FROM animaux WHERE id='$a'");
 
 $resultat= mysql_query($requete);	
 
-echo"<p>Suppresion de l'animal réussie</p>";
+echo"<p>Suppresion de l'animal réussite</p>";
 
 mysql_close();
 ?>
