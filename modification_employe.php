@@ -50,6 +50,6 @@ $a=$_POST['id'];
   echo '<a href="index.html">retour au menu principal</a>';
 mysql_close();
 ?>
-
+<a href="index_admin.html">retour au menu principal</a>
 </body>
 </html>

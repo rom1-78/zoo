@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Ajouter un employé</h1>
+<form method="post" action="ajout_employe.php">
+<table>
+	<tr>
+		<td>Nom de l'employé :</td> <td><input type="text" name="nom" value=""></td>
+	</tr>
+	<tr>
+		<td>Prénom de l'employé :</td> <td><input type="text" name="prenom" value=""></td>
+	</tr>
+	<tr>
+		<td>Date de naissance de l'employé :</td> <td><input type="text" name="date_naissance" value=""></td>
+	</tr>
+	<tr>
+		<td>Sexe :</td> <td><select name="sexe" id="sexe">
+		<option value="sexe" selected> </option>
+		<option value="H">Homme</option>
+		<option value="F">Femme</option>
+		</select>
+		</td>
+	<tr>
+		<td>Fonction de l'employé :</td> <td><input type="text" name="fonction" value=""></td>
+	</tr>
+	<tr>
+		<td>Salaire  de l'employé :</td> <td><input type="text" name="salaire" value=""></td>
+	</tr>
+</table>
+
+ <input  type="submit" value="valider" id="req1">
+<a href="index_admin.html">retour au menu principal</a>
+
+</form>
+</body>
+</html>

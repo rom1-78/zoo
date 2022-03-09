@@ -20,6 +20,6 @@ echo"<p>Suppresion de l'animal réussite</p>";
 
 mysql_close();
 ?>
-<a href="index.html">retour au menu principal</a>
+<a href="index_admin.html">retour au menu principal</a>
 </body>
 </html>

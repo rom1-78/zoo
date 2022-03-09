@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta charset="utf-8">
+	<title></title>
 </head>
 <body>
-	<div class="zoo">
-	<h1>ZOO</h1>
-		<table>
-			<tr>
-				<td class="animaux">
-				<h2>gestion animaux</h2>
-					<ul>
-						<li><a href="ajout_espece.html" class="lien">ajouter une espece</a></li><!-- envoie sur une page html pour ajouter une espece a la bdd  -->
-						<li><a href="ajout_animal.html" class="lien">ajouter un animal</a></li><!-- envoie sur une page html pour ajouter un animal a la bdd  -->
-						<li><a href="recherche_animal.html" class="lien">rechercher un animal</a></li><!-- envoie sur une page html pour rechercher un animal dans la bdd  --><!-- recherche d'un enclos -->
-						<li><a href="informations_animaux.html" class="lien">information des animaux</a></li>
-					</ul>
-				</td>
-				<td class="employés">
-				<h2>gestion employés</h2>
-					<ul>
-						<li><a href="recherche_employe.html" class="lien">rechercher un employé</a></li><!-- envoie sur une page html pour consulter les infos des employés dans la bdd  -->
-						<li><a href="information_employe.html" class="lien">informations sur les employés</a></li><!-- envoie sur une page html pour consulter les infos des employés dans la bdd  -->
-						<li><a href="ajout_employe.html" class="lien">ajouter un employé</a></li><!-- envoie sur une page html pour ajouter un employé dans la bdd  -->
-						<li><a href="modification_employe.html" class="lien">modifier les données</a></li><!-- envoie sur une page html pour modifier les infos des employés dans la bdd  -->
-						<li><a href="supprime_employe.html" class="lien">supprimer</a></li><!-- envoie sur une page html pour supprimer un employé dans la bdd  -->
-					</ul>
-				</td>
-			</tr>
-		</table>
-	</div>
+<form action="modification_animaux.php" method="post">
+<h1>Saisir l'id de l'animal à modidier</h1>
+
+	<button><a href="login.html">Se connecter en temps qu'employé</a></button>
+	<button><a href="login_admin.html">Se connecter en temps qu'admin</a></button>
+
+</form>
 </body>
 </html>
