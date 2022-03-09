@@ -44,7 +44,8 @@ $resultat=mysql_query($requete);
 mysql_close();
 ?>
 <br><br>
+
+
 <button><a href="modification_employe.html">Modifier</a></button>
-<a href="index_admin.html">retour au menu principal</a>
 </body>
 </html>

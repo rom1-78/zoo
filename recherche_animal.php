@@ -8,8 +8,9 @@
 <?php 
 mysql_connect("localhost","root","");
 mysql_select_db("zoo");
+
 $a=$_POST['animal'];
-$requete=("SELECT * FROM animaux WHERE id='$a'");
+$requete=("SELECT * FROM animaux WHERE pseudo='$a'");
 $resultat=mysql_query($requete);
 	
 ?>
@@ -39,6 +40,7 @@ $resultat=mysql_query($requete);
 <?php
 mysql_close();
 ?>
-<a href="index_admin.html">retour au menu principal</a>
+<button><a href="modification_animaux.html">Modifier</a></button>
+<button><a href="supprime_animal.html">Modifier</a></button>
 </body>
 </html>

@@ -47,9 +47,7 @@ $a=$_POST['id'];
   echo '<input type="reset" name="annuler" value="annuler">';
   echo "</form>";
 
-  echo '<a href="index.html">retour au menu principal</a>';
 mysql_close();
 ?>
-<a href="index_admin.html">retour au menu principal</a>
 </body>
 </html>

@@ -11,7 +11,7 @@ mysql_select_db("zoo");
 
 $a=$_POST['id'];
 
-  $requete="SELECT * from animaux where id='$a'";
+  $requete="SELECT * from animaux where pseudo='$a'";
 
   $resultat= mysql_query($requete);
 
@@ -40,13 +40,13 @@ $a=$_POST['id'];
   echo '<p>Commentaire :';
   echo '<input type="text" name="commentaire" size="20" value='.$ligne["commentaire"].'></p><br>';
 
-   echo '<p><input type="submit" name="validation" value="Modifier"></p>';
+   echo '<p><button><a href="informations_animal.html"> Executer</a></button></p>';
   echo '<input type="reset" name="annuler" value="annuler">';
   echo "</form>";
 
-  echo '<a href="index.html">retour au menu principal</a>';
+
 mysql_close();
 ?>
-<a href="index_admin.html">retour au menu principal</a>
+
 </body>
 </html>

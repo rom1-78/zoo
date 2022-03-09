@@ -7,12 +7,12 @@
 <body>
 <?php
 mysql_connect("localhost","root","");
-mysql_select_db("login");
+mysql_select_db("zoo");
 
 $a=$_POST["login"];
 $b=$_POST["mdp"];
 
-$requete="SELECT login from user where login='$a'";
+$requete="SELECT login from connexion_admin where login='$a'";
 $resultat=mysql_query($requete);
 $num=mysql_num_rows($resultat);
 
