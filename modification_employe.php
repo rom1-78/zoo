@@ -43,7 +43,7 @@ $a=$_POST['id'];
   echo '<p>Salaire :';
   echo '<input type="text" name="salaire" size="20" value='.$ligne["salaire"].'></p><br>';
 
-   echo '<p><input type="submit" name="validation" value="Modifier"></p>';
+   echo '<p><button><a href="informations_employe.php">Executer</a></button></p>';
   echo '<input type="reset" name="annuler" value="annuler">';
   echo "</form>";
 

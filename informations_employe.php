@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<form action="" method="get">
 <h1>Recherchez l'employé pour plus d'infos</h1>
 
 <?php 
 mysql_connect("localhost","root","");
 mysql_select_db("zoo");
-$a=$_POST['employe'];
+
+
 $requete=("SELECT * FROM personnels");
 $resultat=mysql_query($requete);
 	
@@ -52,6 +52,5 @@ mysql_close();
 <button><a href="informations_employe.html">Information</a></button>
 <button><a href="supprime_employe.html">Supprimer</a></button>
 <button><a href="index_admin.html">retour au menu principal</a></button>
-</form>
 </body>
 </html>

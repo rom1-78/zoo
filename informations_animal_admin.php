@@ -50,6 +50,5 @@ mysql_close();
 <button><a href="modification_animaux_admin.html">Modifier</a></button>
 <button><a href="supprime_animal_admin.html">Supprimer</a></button>
 <button><a href="index_admin.html">retour au menu principal</a></button>
-</form>
 </body>
 </html>
