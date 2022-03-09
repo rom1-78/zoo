@@ -40,7 +40,7 @@ $a=$_POST['id'];
   echo '<p>Commentaire :';
   echo '<input type="text" name="commentaire" size="20" value='.$ligne["commentaire"].'></p><br>';
 
-   echo '<p><button><a href="informations_animal.html"> Executer</a></button></p>';
+   echo '<p><button><a href="informations_animal.php"> Executer</a></button></p>';
   echo '<input type="reset" name="annuler" value="annuler">';
   echo "</form>";
 

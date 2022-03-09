@@ -5,15 +5,45 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h1>informations des animaux
+<h1>informations des animaux pour plus d'infos</h1>
 
- pour plus d'infos</h1>
+<?php 
+mysql_connect("localhost","root","");
+mysql_select_db("zoo");
 
-<table>
+
+$requete=("SELECT * FROM animaux");
+$resultat=mysql_query($requete);
+	
+?>
+
+<table border="1">
 	<tr>
-		<td>il y aura les infos des animaux</td>
+		<td>Identifiant</td>
+		<td>Reference de la race</td>
+		<td>Date de naissance</td>
+		<td>Pseudo</td>
+		<td>Sexe</td>
+		<td>Commentaire</td>
 	</tr>
+
+	<?php while($enreg=mysql_fetch_array($resultat))
+	{
+		?>
+		<tr>
+			<td><?php echo $enreg["id"];?></td>
+			<td><?php echo $enreg["ref_race"];?></td>
+			<td><?php echo $enreg["date_naissance"];?></td>
+			<td><?php echo $enreg["sexe"];?></td>
+			<td><?php echo $enreg["pseudo"];?></td>
+			<td><?php echo $enreg["commentaire"];?></td>
+		</tr>
+	<?php	
+	} ?>
 </table>
+<?php
+mysql_close();
+?>
 
 <input type="submit" value="valider">
 <a href="recherche_animal.html" class="lien">rechercher un animal</a>

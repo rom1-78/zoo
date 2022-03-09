@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<title></title>
+	<meta charset="utf-8">
 </head>
 <body>
+<h1>informations des animaux pour plus d'infos</h1>
+
 <?php 
 mysql_connect("localhost","root","");
 mysql_select_db("zoo");
 
-$a=$_POST['animal'];
-$requete=("SELECT * FROM animaux WHERE pseudo='$a'");
+
+$requete=("SELECT * FROM animaux");
 $resultat=mysql_query($requete);
 	
 ?>
@@ -20,8 +22,8 @@ $resultat=mysql_query($requete);
 		<td>Identifiant</td>
 		<td>Reference de la race</td>
 		<td>Date de naissance</td>
-		<td>Sexe</td>
 		<td>Pseudo</td>
+		<td>Sexe</td>
 		<td>Commentaire</td>
 	</tr>
 
@@ -42,8 +44,9 @@ $resultat=mysql_query($requete);
 <?php
 mysql_close();
 ?>
-<button><a href="modification_animaux.html">Modifier</a></button>
-<button><a href="informations_animal.html">information</a></button>
-<button><a href="supprime_animal.html">Modifier</a></button>
+
+<input type="submit" value="valider">
+<a href="index_admin.html">retour au menu principal</a>
+</form>
 </body>
 </html>
