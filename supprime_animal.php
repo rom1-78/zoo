@@ -12,7 +12,7 @@ mysql_connect("localhost","root","");
 mysql_select_db("zoo");
 
 $a=$_POST["supprime"];
-$requete=("DELETE FROM animaux WHERE id='$a'");
+$requete=("DELETE FROM animaux WHERE pseudo='$a'");
 
 $resultat= mysql_query($requete);	
 

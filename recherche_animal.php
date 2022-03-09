@@ -43,7 +43,7 @@ $resultat=mysql_query($requete);
 mysql_close();
 ?>
 <button><a href="modification_animaux.html">Modifier</a></button>
-<button><a href="informations_animal.html">information</a></button>
-<button><a href="supprime_animal.html">Modifier</a></button>
+<button><a href="informations_animal.html">Information</a></button>
+<button><a href="supprime_animal.html">Supprimer</a></button>
 </body>
 </html>

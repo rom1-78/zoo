@@ -46,7 +46,9 @@ mysql_close();
 ?>
 
 <input type="submit" value="valider">
-<a href="recherche_animal.html" class="lien">rechercher un animal</a>
-<a href="index_employe.html">retour au menu principal</a>
+<button><a href="recherche_animal.html" class="lien">rechercher un animal</a></button>
+<button><a href="modification_animaux.html">Modifier</a></button>
+<button><a href="supprime_animal.html">Supprimer</a></button>
+<button><a href="index_employe.html">retour au menu principal</a></button>
 </body>
 </html>
