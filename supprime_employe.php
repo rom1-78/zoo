@@ -14,11 +14,12 @@ mysql_select_db("zoo");
 $a=$_POST["supprime"];
 $requete=("DELETE FROM personnels WHERE id='$a'");
 
-$resultat= mysql_query($requete);	
+$resultat= mysql_query($requete);
 
 echo"<p>suppresion de l'employé réussite</p>";
 
 mysql_close();
 ?>
+<button><a href="informations_employe.php">Information</a></button>
 </body>
 </html>

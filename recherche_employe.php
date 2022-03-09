@@ -8,6 +8,7 @@
 <?php 
 mysql_connect("localhost","root","");
 mysql_select_db("zoo");
+
 $a=$_POST['employe'];
 $requete=("SELECT * FROM personnels WHERE id='$a'");
 $resultat=mysql_query($requete);
@@ -47,7 +48,7 @@ mysql_close();
 
 
 <button><a href="modification_employe.html">Modifier</a></button>
-<button><a href="informations_employe.html">Information</a></button>
+<button><a href="informations_employe.php">Information</a></button>
 <button><a href="supprime_employe.html">Supprimer</a></button>
 </body>
 </html>

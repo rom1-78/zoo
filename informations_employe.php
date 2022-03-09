@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<h1>Recherchez l'employé pour plus d'infos</h1>
+<h1>Informations sur les employés</h1>
 
 <?php 
 mysql_connect("localhost","root","");
@@ -47,10 +47,8 @@ $resultat=mysql_query($requete);
 mysql_close();
 ?>
 
-<input type="submit" value="valider">
 <button><a href="modification_employe.html">Modifier</a></button>
-<button><a href="informations_employe.html">Information</a></button>
 <button><a href="supprime_employe.html">Supprimer</a></button>
-<button><a href="index_admin.html">retour au menu principal</a></button>
+<button><a href="index_admin.html">Retour au menu principal</a></button>
 </body>
 </html>

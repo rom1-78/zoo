@@ -20,5 +20,6 @@ echo"<p>Suppresion de l'animal réussite</p>";
 
 mysql_close();
 ?>
+<button><a href="informations_animal.php">Information</a></button>
 </body>
 </html>

@@ -45,10 +45,8 @@ $resultat=mysql_query($requete);
 mysql_close();
 ?>
 
-<input type="submit" value="valider">
-<button><a href="recherche_animal_admin.html" class="lien">rechercher un animal</a></button>
 <button><a href="modification_animaux_admin.html">Modifier</a></button>
 <button><a href="supprime_animal_admin.html">Supprimer</a></button>
-<button><a href="index_admin.html">retour au menu principal</a></button>
+<button><a href="index_admin.html">Retour au menu principal</a></button>
 </body>
 </html>
